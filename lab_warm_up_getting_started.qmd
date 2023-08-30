@@ -1,0 +1,29 @@
+---
+title: "Lab Warm-up: Getting Started"
+author: "Brad Cannell"
+date: "August 28, 2023"
+format: 
+  revealjs:
+    css: style.css
+    preview-links: false
+    embed-resources: true
+logo: uthealth_sph_logo.png
+---
+
+This presentation is being linked to from index.html. Why would we do this? Because the Poll Everywhere links do work if we just share the HTML file (even with embed-resources: true). They do work when we serve the slide show from gh-pages, but we don't want to create a separate repo for each slide show. Therefore, we can link to the slideshows from the index page of the gh-pages branch.
+
+## Poll Everywhere Live Presentation View {.scrollable}
+
+This slide uses an embedded live presentation view script
+
+<iframe src="https://embed.polleverywhere.com/multiple_choice_polls/Sj2BkUh8EID48gQPtbpWN?controls=none&short_poll=true" width="800px" height="600px"></iframe>
+
+::: notes
+- Share this link to reveal the real-time chart for your activity.
+- I think this is the view I will typically need to use in class.
+:::
+
+## Download PDF
+
+If you would like to save a PDF copy of this lab warm-up, you may do so by [following these directions](https://quarto.org/docs/presentations/revealjs/presenting.html#print-to-pdf).
+

@@ -6,7 +6,6 @@ format:
   revealjs:
     css: style.css
     preview-links: false
-    # embed-resources: true
 logo: uthealth_sph_logo.png
 ---
 
@@ -92,6 +91,13 @@ This slide uses an embedded live presentation view script
 ::: notes
 - It seems like the Poll Everywhere questions don't work if we use the `embed-resources: true` option.
 - In fact, it seems like the Poll Everywhere questions don't work unless I'm actively rendering the document from an RStudio session.
+- It does seem to work when I publish to GitHub, though.
 :::
+
+## Link to another slide show
+
+Can I use index as a series of links to other slide shows. Why would we do this? Because the Poll Everywhere links do work if we just share the HTML file (even with embed-resources: true). They do work when we serve the slide show from gh-pages, but we don't want to create a separate repo for each slide show. Therefore, we can link to the slideshows from the index page of the gh-pages branch.
+
+1. [Lab Warm-up: Getting Started](lab_warm_up_getting_started.html)
 
   
