@@ -1,0 +1,72 @@
+[
+  {
+    "objectID": "index.html#about-me",
+    "href": "index.html#about-me",
+    "title": "Test Using Quarto for RevealJS",
+    "section": "About Me",
+    "text": "About Me\n\n\nBrad Cannell, PhD, MPH\nAssociate Professor\nUTHealth-Houston School of Public Health\n\n\n\n\n\n\nPress the “S” key to bring up the presenter view.\nIntroduce myself"
+  },
+  {
+    "objectID": "index.html#embed-a-poll-everywhere-activity",
+    "href": "index.html#embed-a-poll-everywhere-activity",
+    "title": "Test Using Quarto for RevealJS",
+    "section": "Embed a Poll Everywhere Activity",
+    "text": "Embed a Poll Everywhere Activity\n\nThe blog post\n\nhttps://support.polleverywhere.com/hc/en-us/articles/1260801821849-Embed-an-activity\n\n\nStep 1. Create a poll everywhere activity.\nStep 2. Add activities to the RevealJS slides using embed code. See the blog post from slide one."
+  },
+  {
+    "objectID": "index.html#poll-everywhere-response-link",
+    "href": "index.html#poll-everywhere-response-link",
+    "title": "Test Using Quarto for RevealJS",
+    "section": "Poll Everywhere Response Link",
+    "text": "Poll Everywhere Response Link\nThis slide uses an embedded response link script\n\n\n\nUse this link to collect responses even when the activity is not activated. Participants can respond asynchronously or over a long period of time."
+  },
+  {
+    "objectID": "index.html#poll-everywhere-pollev-page",
+    "href": "index.html#poll-everywhere-pollev-page",
+    "title": "Test Using Quarto for RevealJS",
+    "section": "Poll Everywhere PollEv Page",
+    "text": "Poll Everywhere PollEv Page\nThis slide uses an embedded PollEv page script\n\n\n\n\nUse this page to present an activity to a live audience. The page will always display the activity that is currently activated on the account.\nYou have to actually go into Poll Everywhere and click the “Activate” button.\nDon’t forget to click “Deactivate” when you’re done."
+  },
+  {
+    "objectID": "index.html#poll-everywhere-live-presentation-view",
+    "href": "index.html#poll-everywhere-live-presentation-view",
+    "title": "Test Using Quarto for RevealJS",
+    "section": "Poll Everywhere Live Presentation View",
+    "text": "Poll Everywhere Live Presentation View\nThis slide uses an embedded live presentation view script\n\n\n\n\nShare this link to reveal the real-time chart for your activity.\nI think this is the view I will typically need to use in class."
+  },
+  {
+    "objectID": "index.html#sharing-slides",
+    "href": "index.html#sharing-slides",
+    "title": "Test Using Quarto for RevealJS",
+    "section": "Sharing slides",
+    "text": "Sharing slides\n\nYou can publish on GitHub. See the Test Quarto Book for Details.\nYou can share as a PDF file.\nYou can create a self-contained HTML file by adding the embed-resources: true option to the yaml header.\n\n\n\nIt seems like the Poll Everywhere questions don’t work if we use the embed-resources: true option.\nIn fact, it seems like the Poll Everywhere questions don’t work unless I’m actively rendering the document from an RStudio session.\nIt does seem to work when I publish to GitHub, though."
+  },
+  {
+    "objectID": "index.html#link-to-another-slide-show",
+    "href": "index.html#link-to-another-slide-show",
+    "title": "Test Using Quarto for RevealJS",
+    "section": "Link to another slide show",
+    "text": "Link to another slide show\nCan I use index as a series of links to other slide shows. Why would we do this? Because the Poll Everywhere links do work if we just share the HTML file (even with embed-resources: true). They do work when we serve the slide show from gh-pages, but we don’t want to create a separate repo for each slide show. Therefore, we can link to the slideshows from the index page of the gh-pages branch.\n\nLab Warm-up: Getting Started"
+  },
+  {
+    "objectID": "lab_warm_up_getting_started.html#poll-everywhere-live-presentation-view",
+    "href": "lab_warm_up_getting_started.html#poll-everywhere-live-presentation-view",
+    "title": "Lab Warm-up: Getting Started",
+    "section": "Poll Everywhere Live Presentation View",
+    "text": "Poll Everywhere Live Presentation View\nThis slide uses an embedded live presentation view script\n\n\n\n\nShare this link to reveal the real-time chart for your activity.\nI think this is the view I will typically need to use in class."
+  },
+  {
+    "objectID": "lab_warm_up_getting_started.html#download-pdf",
+    "href": "lab_warm_up_getting_started.html#download-pdf",
+    "title": "Lab Warm-up: Getting Started",
+    "section": "Download PDF",
+    "text": "Download PDF\nIf you would like to save a PDF copy of this lab warm-up, you may do so by following these directions."
+  },
+  {
+    "objectID": "lab_warm_up_getting_started.html#publish-error",
+    "href": "lab_warm_up_getting_started.html#publish-error",
+    "title": "Lab Warm-up: Getting Started",
+    "section": "Publish error",
+    "text": "Publish error\nI’m getting the following errors\nERROR: The specified path (/Users/bradcannell/Library/CloudStorage/Dropbox/Quarto/test_quarto_revealjs) is not a website or book project so cannot be published.\nI think I need to change the yaml header to make it a website.\nNote This is only because I’m linking between multiple slideshows. Before, when I only had one slideshow, this didn’t happen."
+  }
+]

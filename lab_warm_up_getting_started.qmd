@@ -6,7 +6,7 @@ format:
   revealjs:
     css: style.css
     preview-links: false
-    embed-resources: true
+    # embed-resources: true
 logo: uthealth_sph_logo.png
 ---
 
@@ -27,3 +27,14 @@ This slide uses an embedded live presentation view script
 
 If you would like to save a PDF copy of this lab warm-up, you may do so by [following these directions](https://quarto.org/docs/presentations/revealjs/presenting.html#print-to-pdf).
 
+## Publish error
+
+I'm getting the following errors
+
+````
+ERROR: The specified path (/Users/bradcannell/Library/CloudStorage/Dropbox/Quarto/test_quarto_revealjs) is not a website or book project so cannot be published.
+````
+
+I think I need to change the yaml header to make it a website.
+
+**Note** This is only because I'm linking between multiple slideshows. Before, when I only had one slideshow, this didn't happen.
