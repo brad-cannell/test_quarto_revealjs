@@ -10,8 +10,9 @@
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.3.427">
 
+  <meta name="author" content="Brad Cannell">
   <meta name="dcterms.date" content="2023-08-28">
-  <title>Test Quarto RevealJS - Test Using Quarto for RevealJS</title>
+  <title>Test Quarto RevealJS - Lab Warm-up: Getting Started</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -326,94 +327,21 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Test Using Quarto for RevealJS</h1>
-  <p class="subtitle">Test Subtitle</p>
+  <h1 class="title">Lab Warm-up: Getting Started</h1>
 
 <div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Brad Cannell 
+</div>
+</div>
 </div>
 
   <p class="date">2023-08-28</p>
 </section>
-<section id="about-me" class="slide level2">
-<h2>About Me</h2>
-<div class="columns">
-<div class="column" style="vertical-align: middle;">
-<p>Brad Cannell, PhD, MPH<br>
-Associate Professor<br>
-UTHealth-Houston School of Public Health</p>
-</div><div class="column" style="vertical-align: middle;">
-<p><img data-src="cannell-headshot.jpg"></p>
-</div>
-</div>
-<aside class="notes">
-<ul>
-<li>Press the “S” key to bring up the presenter view.</li>
-<li>Introduce myself</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="embed-a-poll-everywhere-activity" class="slide level2">
-<h2>Embed a Poll Everywhere Activity</h2>
-<ul>
-<li>The blog post
-<ul>
-<li><a href="https://support.polleverywhere.com/hc/en-us/articles/1260801821849-Embed-an-activity" target="_blank">https://support.polleverywhere.com/hc/en-us/articles/1260801821849-Embed-an-activity</a></li>
-</ul></li>
-</ul>
-<p>Step 1. <a href="https://www.polleverywhere.com/home" target="_blank">Create a poll everywhere activity</a>.</p>
-<p>Step 2. Add activities to the RevealJS slides using embed code. See the blog post from slide one.</p>
-</section>
-<section id="poll-everywhere-response-link" class="slide level2 scrollable">
-<h2>Poll Everywhere Response Link</h2>
-<p>This slide uses an embedded response link script</p>
-<iframe src="https://pollev-embeds.com/multiple_choice_polls/FPlbstLvb1V50ATBZLzIj/respond" width="800px" height="600px">
-</iframe>
-<aside class="notes">
-<p>Use this link to collect responses even when the activity is not activated. Participants can respond asynchronously or over a long period of time.</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="poll-everywhere-pollev-page" class="slide level2 scrollable">
-<h2>Poll Everywhere PollEv Page</h2>
-<p>This slide uses an embedded PollEv page script</p>
-<iframe src="https://pollev-embeds.com/cannell" width="800px" height="600px">
-</iframe>
-<aside class="notes">
-<ul>
-<li>Use this page to present an activity to a live audience. The page will always display the activity that is currently activated on the account.</li>
-<li>You have to actually go into Poll Everywhere and click the “Activate” button.</li>
-<li>Don’t forget to click “Deactivate” when you’re done.</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
+<section class="slide level2">
+
+<p>This presentation is being linked to from index.html. Why would we do this? Because the Poll Everywhere links do work if we just share the HTML file (even with embed-resources: true). They do work when we serve the slide show from gh-pages, but we don’t want to create a separate repo for each slide show. Therefore, we can link to the slideshows from the index page of the gh-pages branch.</p>
 </section>
 <section id="poll-everywhere-live-presentation-view" class="slide level2 scrollable">
 <h2>Poll Everywhere Live Presentation View</h2>
@@ -436,59 +364,17 @@ UTHealth-Houston School of Public Health</p>
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
-<!-- Use a horizontal rule to create a new slide without a title -->
 </section>
-<section class="slide level2">
-
-<iframe src="https://embed.polleverywhere.com/multiple_choice_polls/Sj2BkUh8EID48gQPtbpWN?controls=none&amp;short_poll=true" width="800px" height="600px">
-</iframe>
-<aside class="notes">
-<ul>
-<li>Same slide as before. This time there just isn’t a title to the slide.</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
+<section id="download-pdf" class="slide level2">
+<h2>Download PDF</h2>
+<p>If you would like to save a PDF copy of this lab warm-up, you may do so by <a href="https://quarto.org/docs/presentations/revealjs/presenting.html#print-to-pdf">following these directions</a>.</p>
 </section>
-<section id="sharing-slides" class="slide level2">
-<h2>Sharing slides</h2>
-<ol type="1">
-<li><p>You can publish on GitHub. See the <a href="https://brad-cannell.github.io/test_quarto_book/chapters/slide_presentations.html">Test Quarto Book</a> for Details.</p></li>
-<li><p>You can <a href="https://quarto.org/docs/presentations/revealjs/presenting.html#print-to-pdf">share as a PDF file</a>.</p></li>
-<li><p>You can create a self-contained HTML file by adding the <code>embed-resources: true</code> option to the yaml header.</p></li>
-</ol>
-<aside class="notes">
-<ul>
-<li>It seems like the Poll Everywhere questions don’t work if we use the <code>embed-resources: true</code> option.</li>
-<li>In fact, it seems like the Poll Everywhere questions don’t work unless I’m actively rendering the document from an RStudio session.</li>
-<li>It does seem to work when I publish to GitHub, though.</li>
-</ul>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="link-to-another-slide-show" class="slide level2">
-<h2>Link to another slide show</h2>
-<p>Can I use index as a series of links to other slide shows. Why would we do this? Because the Poll Everywhere links do work if we just share the HTML file (even with embed-resources: true). They do work when we serve the slide show from gh-pages, but we don’t want to create a separate repo for each slide show. Therefore, we can link to the slideshows from the index page of the gh-pages branch.</p>
-<ol type="1">
-<li><a href="lab_warm_up_getting_started.html">Lab Warm-up: Getting Started</a></li>
-</ol>
+<section id="publish-error" class="slide level2">
+<h2>Publish error</h2>
+<p>I’m getting the following errors</p>
+<pre><code>ERROR: The specified path (/Users/bradcannell/Library/CloudStorage/Dropbox/Quarto/test_quarto_revealjs) is not a website or book project so cannot be published.</code></pre>
+<p>I think I need to change the yaml header to make it a website.</p>
+<p><strong>Note</strong> This is only because I’m linking between multiple slideshows. Before, when I only had one slideshow, this didn’t happen.</p>
 
 
 <img src="uthealth_sph_logo.png" class="slide-logo r-stretch"><div class="footer footer-default">
