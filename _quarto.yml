@@ -1,10 +1,21 @@
 project:
   type: website
-  
-website: 
+  render:
+    - index.qmd
+    - test_lab_warm_up.qmd
+    
+website:
   title: "Test Quarto RevealJS"
   navbar:
+    search: true
     left:
-      - href: index.qmd
-        text: Home
-      - lab_warm_up_getting_started.qmd
+      - text: "Home"
+        file: index.qmd
+      - text: "Lab warm-ups"
+        file: test_lab_warm_up.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: style.css
+    toc: true

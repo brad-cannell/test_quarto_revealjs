@@ -1,0 +1,128 @@
+---
+title: "Using RevealJS for Lab Warm-ups"
+subtitle: "Testing"
+date: "September 01, 2023"
+format: 
+  revealjs:
+    css: style.css
+    preview-links: false
+logo: uthealth_sph_logo.png
+---
+
+## About Me
+
+::: columns
+::: {.column style="vertical-align: middle;"}
+Brad Cannell, PhD, MPH\
+Associate Professor\
+UTHealth-Houston School of Public Health
+:::
+
+::: {.column style="vertical-align: middle;"}
+![](cannell-headshot.jpg)
+:::
+:::
+
+::: notes
+- Press the "S" key to bring up the presenter view.
+- Introduce myself
+:::
+
+## In class lab warm-ups
+
+At the beginning of each in-person lab session students will complete a warm-up together as a class, along with the instructor, using a series of interactive poll questions that provide immediate feedback. These activities will not be graded; however, participating gives students an opportunity to self-assess their comprehension and ask questions.
+
+[Click here for more info](https://github.com/brad-cannell/epi_3_public/wiki/Course-structure)
+
+## Poll Everywhere
+
+Why are we switching from Socrative to Poll Everywhere?
+
+  1. We (UTHealth) have an institutional Poll Everywhere paid account.
+  
+  2. Hopefully, we won’t have to switch back and forth between Socrative, RStudio, and PowerPoint during the lab warm-up. The idea is that we will be able to embed text, R code, R results, and poll questions directly into RevealJS slides or PowerPoint. As of this writing, we are still trying to figure out the best option.
+
+## Embed a Poll Everywhere Activity
+
+- The blog post
+  - <https://support.polleverywhere.com/hc/en-us/articles/1260801821849-Embed-an-activity>{target=_blank}
+  
+Step 1. [Create a poll everywhere activity](https://www.polleverywhere.com/home){target=_blank}.
+
+Step 2. Add activities to the RevealJS slides using embed code. See the blog post from slide one.
+
+## Current issues {.scrollable}
+
+After creating a RevealJS slide deck, Poll Everywhere activities aren't displayed when we open the slides by double-clicking the HTML file.
+
+- Is this because only one activity can be active at a time?
+
+- Is it still an issue if we serve the slides from GitHub pages?
+
+- Is it still an issue if we try a different embed type (i.e., Response link, PollEv page, or Live presentation view)
+
+- Can I use index as a series of links to other slide shows? Why would we do this? Because the Poll Everywhere links don't work if we just share the HTML file (even with embed-resources: true). They do work when we serve the slide show from gh-pages, but we don't want to create a separate repo for each slide show. Therefore, we can link to the slideshows from the index page of the gh-pages branch?
+
+## Poll Everywhere Response Link {.scrollable}
+
+This slide uses an embedded response link script
+
+<iframe src="https://pollev-embeds.com/multiple_choice_polls/FPlbstLvb1V50ATBZLzIj/respond" width="800px" height="600px"></iframe>
+
+::: notes
+Use this link to collect responses even when the activity is not activated. Participants can respond asynchronously or over a long period of time.
+:::
+
+## Poll Everywhere PollEv Page {.scrollable}
+
+This slide uses an embedded PollEv page script
+
+<iframe src="https://pollev-embeds.com/cannell" width="800px" height="600px"></iframe>
+
+::: notes
+- Use this page to present an activity to a live audience. The page will always display the activity that is currently activated on the account.
+- You have to actually go into Poll Everywhere and click the "Activate" button.
+- Don't forget to click "Deactivate" when you're done.
+:::
+
+## Poll Everywhere Live Presentation View {.scrollable}
+
+This slide uses an embedded live presentation view script
+
+<iframe src="https://embed.polleverywhere.com/multiple_choice_polls/Sj2BkUh8EID48gQPtbpWN?controls=none&short_poll=true" width="800px" height="600px"></iframe>
+
+::: notes
+- Share this link to reveal the real-time chart for your activity.
+- I think this is the view I will typically need to use in class.
+:::
+
+<!-- Use a horizontal rule to create a new slide without a title -->
+
+---
+
+<iframe src="https://embed.polleverywhere.com/multiple_choice_polls/Sj2BkUh8EID48gQPtbpWN?controls=none&short_poll=true" width="800px" height="600px"></iframe>
+
+::: notes
+- Same slide as before. This time there just isn't a title to the slide.
+:::
+
+## Sharing slides
+
+1. You can publish on GitHub. See the [Test Quarto Book](https://brad-cannell.github.io/test_quarto_book/chapters/slide_presentations.html) for Details.
+
+2. You can [share as a PDF file](https://quarto.org/docs/presentations/revealjs/presenting.html#print-to-pdf). 
+
+3. You can create a self-contained HTML file by adding the `embed-resources: true` option to the yaml header.
+
+::: notes
+- It seems like the Poll Everywhere questions don't work if we use the `embed-resources: true` option.
+- In fact, it seems like the Poll Everywhere questions don't work unless I'm actively rendering the document from an RStudio session.
+- It does seem to work when I publish to GitHub, though.
+:::
+
+## Serving from gh-pages
+
+Do the Poll Everywhere iframe's work if I serve the slides from gh-pages?
+
+
+  
